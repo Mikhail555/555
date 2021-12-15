@@ -1,0 +1,210 @@
+@import "_mixins"
+
+$black: #000000  
+$gray_for_Text: #828282
+$white: #ffffff
+$red: #fa0000
+
+.header
+    @include flex(100%, auto ,100px)
+    position: absolute
+    z-index: 1
+    background-color: var(--GeneralColor)
+	
+.inner_header
+    @include flex-center(90%, auto ,auto)
+    justify-content: space-between
+
+.logo
+    @include flex-center(25%, auto ,auto)
+    background-color: var(--GeneralColor)   
+    img
+        @include size(72px, 41px ,auto)
+    p
+        color: $gray_for_Text
+        margin-left: 20px
+
+.social
+    @include flex-center(14%, auto ,auto)
+    justify-content: space-between
+    p
+        color: $white
+
+.adress
+    @include flex-center(15%, auto ,auto)
+    p
+        color: $gray_for_Text
+        margin-left: 15px
+.number
+    @include flex-center(15%, auto ,auto)
+    p
+        color: $white
+.container_info
+    @include flex-center(100%, auto ,921px)
+    flex-direction: column
+    background-color: var(--GeneralColor)
+.container_inner
+    @include flex(95%, 650px ,auto)
+    flex-direction: column
+    justify-content: center
+.info
+    @include flex(40%, 135px ,auto)
+    @include text-two(25px, white, 20px ,  auto , none , nowrap) 
+    color: $red
+.info_one
+    @include flex(100%, auto ,170px)
+    flex-direction: column
+    p
+        @include text-two(25px, white, 30px ,  auto , none , nowrap) 
+.cource_info
+    @include flex(10%, auto ,auto)
+    align-self: flex-end
+    transform: rotate(270deg)
+.cource_btn
+    @include btn(230px, 50px ,auto)
+    background-color: $red   
+    color: $white 
+.btn_request
+    @include flex(100%, auto , 100px)
+    background-color: var(--GeneralColor)    
+.btn_req
+    @include btn(230px, 50px ,auto)
+    background-color: $red
+    color: $white
+.navigation
+    @include flex(95%, auto ,auto)  
+.more
+    @include flex(15%, auto,auto)
+    align-items: center
+    img
+        @include size(50px, 50px ,auto)  
+    p
+        margin-left: 15px
+        color: $gray_for_Text
+.img_container
+    @include flex(100%, auto ,auto)
+    justify-content: flex-end 
+.img_content
+    @include flex(50%, auto ,auto)
+    justify-content: space-between
+    img
+        @include size(240px, 180px ,auto)
+.center_info
+    @include flex-center(100%, auto ,220px)
+    align-items: flex-end
+    color: $red
+.text_content
+    @include flex(100%, auto ,500px)
+    justify-content: space-around
+    margin-top: 40px
+.left_content
+    @include flex(45%, auto ,auto)
+    @include text-two(14px, white, 19px ,  auto , none , auto) 
+    p
+        flex-direction: column
+    span
+        color: $red
+.right_content
+    @include flex-center(45%, auto ,auto)
+    img
+        @include size(100%, 100% ,auto)
+        
+    
+    
+                
+
+        
+
+
+        
+.slider
+    max-width: 100%
+    position: relative
+    margin: auto
+    height: 921px
+    margin-bottom: 15px
+    
+.item
+    @include size(100%, 100% ,auto)
+    background-image: url("../image/bg.png") 
+    background-size: cover
+    background-repeat: no-repeat
+    background-position: center
+    -webkit-transition: none !important
+    -moz-transition: none !important
+    -o-transition: none !important
+    transition: none !important
+   
+
+/* Картинка мастабируется по отношению к родительскому элементу */
+.slider .item img 
+    object-fit: cover
+    border: none !important
+    box-shadow: none !important
+    background-image: url("../image/bg.png")
+ 
+
+/* Кнопки вперед и назад */
+.slider .prev, .slider .next 
+    cursor: pointer
+    position: absolute
+    top: 0
+    top: 50%
+    width: auto
+    margin-top: -22px
+    padding: 16px
+    color: white
+    font-weight: bold
+    font-size: 18px
+    transition: 0.6s ease
+    border-radius: 0 3px 3px 0
+    
+
+.slider .next 
+    right: 0
+    border-radius: 3px 0 0 3px
+
+/* При наведении на кнопки добавляем фон кнопок */
+.slider .prev:hover,
+.slider .next:hover 
+    background-color: rgba(0, 0, 0, 0.8)
+
+/* Заголовок слайда */
+.slideText 
+    position: absolute
+    color: #fff
+    font-size: 35px
+    /* Выравнивание текста по горизонтали и по вертикали*/
+    left: 50%
+    top: 50%
+    transform: translate(-50%, -50%)
+    /* Тень*/
+    text-shadow: 1px 1px 1px #000, 0 0 1em #000
+
+/* Анимация слайдов */
+.slider .item 
+    -webkit-animation-name: fade
+    -webkit-animation-duration: 1.5s
+    animation-name: fade
+    animation-duration: 1.5s
+
+@-webkit-keyframes fade 
+    from 
+        opacity: .4
+    to 
+        opacity: 1
+    
+@keyframes fade 
+    from 
+        opacity: .4
+    to 
+        opacity: 1
+    
+
+    
+    
+
+        
+    
+
+    

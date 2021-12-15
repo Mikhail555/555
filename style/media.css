@@ -1,0 +1,13 @@
+@media (max-width: 1500px) {
+  body {
+      font-size: 70%;
+  }
+ 
+}
+@media (max-width: 1200px) {
+    body {
+        font-size: 50%;
+    }
+  
+    
+  }
