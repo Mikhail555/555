@@ -7,8 +7,9 @@
     <title>Document</title>
     <link rel="stylesheet" href="style/style.css" />
     <link rel="stylesheet" href="style/media.css" />
-  
   </head>
+
+  <body>
   <header>
     <div class="header">
         <div class="inner_header">
@@ -27,20 +28,36 @@
             <a href="#"><p>г. Алматы, Мамыр <br> 4-й микрорайон, д165</p></a>
           </div>
           <div class="number">
-            <a href="#"><p>+7-707-775-05-33</p></a>
+            <a href="tel:+77077750533">+7-707-775-05-33</a>
           </div>
+        </div>
+        <div class="hamburger-menu">
+          <input id="menu__toggle" type="checkbox" />
+          <label class="menu__btn" for="menu__toggle">
+            <span></span>
+          </label>
+          <ul class="menu__box">
+            <li><a class="menu__item" href="#">Главная</a></li>
+            <li><a class="menu__item" href="#">О нас</a></li>
+            <li><a class="menu__item page_three" href="#">Курсы</a></li>
+            <li><a class="menu__item" href="#">Галерея</a></li>
+            <li><a class="menu__item" href="#">Контакты</a></li>
+            <li class="menu__item">
+              <a href="#"><img src="image/whatsapp.svg" alt=""></a>
+              <a href="#"><img src="image/facebook.svg" alt=""></a>
+              <a href="#"><img src="image/unnamed.svg" alt=""></a></li>
+            <li><a class="menu__item" href="tel:+77077750533">+7-707-775-05-33</a></li>
+          </ul>
         </div>
       </div>
   </header>
   
-  <body>
-    
     <div class="slider">
-      <div class="item">
+      <div class="item" id="slide_one">
         <div class="container_info">
           <div class="container_inner">
             <div class="info">
-              <h1> <br> Курсы крановщика <br> <br> <br> в Алматы от 30 000 тг</h1>
+              <h1>Курсы крановщика <br> <br> <br> в Алматы от 30 000 тг</h1>
             </div>
             <div class="info_one">
               <p>Индивидуальное обучение</p>
@@ -51,7 +68,27 @@
               </div>
             </div>
             <div class="btn_request">
-              <button class="btn_req">Оставить заявку</button>
+              <button class="btn_req">
+                <div id="zatemnenie">
+                  <div id="okno">
+                    <div class="form__group field">
+                      <input type="input" class="form__field" placeholder="Name" name="name" id='name' required />
+                      <label for="name" class="form__label">Имя</label>
+                    </div>
+                    <div class="form__group field">
+                      <input type="input" class="form__field" placeholder="Name" name="name" id='name' required />
+                      <label for="name" class="form__label">Фамилия</label>
+                    </div>
+                    <div class="form__group field">
+                      <input type="input" class="form__field" placeholder="Name" name="name" id='name' required />
+                      <label for="name" class="form__label">Город</label>
+                    </div>
+                    <a href="#" class="close">Закрыть окно</a>
+                    <a href="#" class="send">Отправить заявку</a>
+                  </div>
+                </div>
+                 <a href="#zatemnenie">Оставить заявку</a>
+              </button>
             </div>
           </div>
           <div class="navigation">
@@ -69,7 +106,7 @@
           </div>
         </div>
       </div>  
-      <div class="item">
+      <div class="item" id="slide_two">
         <div class="center_info">
           <h1>О центре</h1>
         </div>
@@ -88,38 +125,188 @@
               менеджер гостиничного бизнеса, повар, парикмахер, <br> массажист, трактористы-машинисты на управление тракторами, <br> другими самоходными сельскохозяйственными, <br>
               мелиоративными и другими дорожно-строительными машинами, <br> обучение наквалификационные свидетельства «преподаватель», <br> «мастер производственногообучения», <br> «мастер обучения вождению во время образовательного процесса».</p>
           </div>
-          <div class="right_content">
+          <div class="right_part">
             <img src="image/image-track.png" alt="">
           </div>
         </div>
+        <div class="part_more_two">
+          <div class="more_five">
+            <a href="#"><img src="image/scroll-down 1.svg" alt=""></a>
+            <p>Узнать больше</p>
+          </div>
+        </div>
       </div>
-  
-      <div class="item">
-         <div class="content">
-           <button></button>
-         </div> 
+      <div class="item" id="slide_tree">
+        <div class="main_course">
+          <h1>Наши Курсы</h1>
+        </div> 
+        <div class="box_ten">
+        <div class="slider_ten">
+          <div class="item_ten">
+            <div class="image_ten_one">
+              <img src="image/c1 1.png" alt="Первый слайд">
+              <div class="image_ten_info_one">
+              <h2>Автошкола</h2>
+              <p>Полный курс Теория+ Практика всего Ускоренный курс 1 месяц.
+                Гибкая форма оплаты
+                Профессиональный преподавательский состав Удобный график</p>
+                <h4>38 000 тенге</h4>
+                <button class="btn_ten_more_one">Подробнее</button>
+              </div>
+            </div>
+            <div class="image_ten_two">
+              <img src="image/с2 1.png" alt="">
+              <div class="image_ten_info_two">
+                <h2>Крановщик</h2>
+                <p>Обучение с практикой с опытным наставникомв г. Алматы. По окончании курса выдается свидетельство, и допуск.</p>
+                <h4>50 000 тенге</h4>
+                <button class="btn_ten_more_two">Подробнее</button>
+              </div>
+            </div>
+            <div class="image_ten_three">
+              <img src="image/с3 1.png" alt="">
+              <div class="image_ten_info_three">
+                <h2>Погрузчик</h2>
+                <p>Обучение с практикой с опытным наставникомв г. Алматы. По окончании курса выдается свидетельство, и допуск.</p>
+                <h4>45 000 тенге</h4>
+                <button class="btn_ten_more_three">Подробнее</button>
+              </div>
+            </div>
+          </div>
+          <div class="item_ten">
+              <div class="image_ten_one">
+                <img src="image/c1 1.png" alt="Первый слайд">
+                <div class="image_ten_info_one">
+                <h2>Автошкола</h2>
+                <p>Полный курс Теория+ Практика всего Ускоренный курс 1 месяц.
+                  Гибкая форма оплаты
+                  Профессиональный преподавательский состав Удобный график</p>
+                  <h4>38 000 тенге</h4>
+                  <button class="btn_ten_more_one">Подробнее</button>
+                </div>
+              </div>
+              <div class="image_ten_two">
+                <img src="image/с2 1.png" alt="">
+                <div class="image_ten_info_two">
+                  <h2>Крановщик</h2>
+                  <p>Обучение с практикой с опытным наставникомв г. Алматы. По окончании курса выдается свидетельство, и допуск.</p>
+                  <h4>50 000 тенге</h4>
+                  <button class="btn_ten_more_two">Подробнее</button>
+                </div>
+              </div>
+              <div class="image_ten_three">
+                <img src="image/с3 1.png" alt="">
+                <div class="image_ten_info_three">
+                  <h2>Погрузчик</h2>
+                  <p>Обучение с практикой с опытным наставникомв г. Алматы. По окончании курса выдается свидетельство, и допуск.</p>
+                  <h4>45 000 тенге</h4>
+                  <button class="btn_ten_more_three">Подробнее</button>
+                </div>
+              </div>
+          </div>
+          <a class="prev_ten" onclick="minusSlide_ten()">&#10094;</a>
+          <a class="next_ten" onclick="plusSlide_ten()">&#10095;</a>
       </div>
-
-      <div class="item">
-        
+        </div>
       </div>
-
-      <div class="item">
-        
+      <div class="item" id="slide_four">
+        <div class="main_info">
+          <h1>Галерея </h1>
+        </div>
+      <div class="block_tabs">
+        <div class="btn-menu">
+          <div class="tabs__nav">
+            <button class="tabs__nav-btn" type="button" data-tab="#tab_1">Техника</button>
+            <button class="tabs__nav-btn" type="button" data-tab="#tab_2">Центр</button>
+            <button class="tabs__nav-btn" type="button" data-tab="#tab_3">Машины</button>
+          </div>
+        </div>
+        <div class="tabs__content">
+          <div class="tabs__item" id="tab_1">
+            <div class="inner-block-1">
+              <img src="image/g1 1.png" alt="">
+              <img src="image/g1 1.png" alt="">
+              <img src="image/g1 1.png" alt=""></div>
+             <div class="down_img"> 
+               <img src="image/g1 1.png" alt="">
+              <img src="image/g1 1.png" alt="">
+              <img src="image/g1 1.png" alt="">
+             </div>
+          </div>
+          <div class="tabs__item" id="tab_2">
+            <div class="inner-block-2">
+              <img src="image/с21.png" alt="">
+              <img src="image/с21.png" alt="">
+              <img src="image/с21.png" alt=""></div>
+             <div class="down_img_two"> 
+              <img src="image/с21.png" alt="">
+              <img src="image/с21.png" alt="">
+              <img src="image/с21.png" alt="">
+             </div>
+          </div>
+          <div class="tabs__item" id="tab_3">
+            <div class="inner-block-3">
+              <img src="image/2323.png" alt="">
+              <img src="image/2323.png" alt="">
+              <img src="image/2323.png" alt=""></div>
+             <div class="down_img_tree">
+              <img src="image/2323.png" alt="">
+              <img src="image/2323.png" alt="">
+              <img src="image/2323.png" alt="">
+             </div>
+          </div>
+        </div>
       </div>
-
-      <div class="item">
-        
+      <div class="main_more">
+        <div class="more_one">
+          <a href="#"><img src="image/scroll-down 1.svg" alt=""></a>
+          <p>Узнать больше</p>
+        </div>
       </div>
-  
+      </div>
+      <div class="item" id="slide_five">
+      <div class="main_contact">
+        <h1>Контакты</h1>
+      </div>
+      <div class="contact_info">
+        <div class="left_part">
+          <div class="up_content">
+            <h4>Адрес:</h4>
+            <p>Алматы,Мамыр 4-й микрорайон, дом165</p>
+            <h4>Телефоны:</h4>
+            <p>+7 (727) 380-02-34</p>
+          </div>
+          <div class="down_content">
+            <h4>Почта:</h4>
+            <p>info@autocpo.kz</p>
+            <h4>Оставьте заявку</h4>
+            <p>Наш менеджер свяжется с Вами через 15 минут</p>
+            <input class="input_info" type="text">
+            <input class="input_info" type="text">
+            <button class="app">Оставить заявку</button>
+          </div>
+        </div>
+        <div class="right_content">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2907.785193242215!2d76.84743391571263!3d43.21399458873723!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x388368481894305d%3A0x12b7e047098c8570!2z0LzQuNC60YDQvtGA0LDQudC-0L0g0JzQsNC80YvRgC0xIDQsINCQ0LvQvNCw0YLRiw!5e0!3m2!1sru!2skz!4v1640103123569!5m2!1sru!2skz" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+      </div>
+      <div class="part_more">
+        <div class="more_two">
+          <a href="#"><img src="image/scroll-down 1.svg" alt=""></a>
+          <p>Узнать больше</p>
+        </div>
+      </div>
+      </div>
+      <div class="slider_container">
       <a class="prev" onclick="minusSlide()">&#10094;</a>
-      <a class="next" onclick="plusSlide()">&#10095;</a>
+      <a class="next" onclick="plusSlide()">&#10095;</a></div>
   </div>
-  
   <div class="slider-dots">
       <span class="slider-dots_item" onclick="currentSlide(1)"></span> 
       <span class="slider-dots_item" onclick="currentSlide(2)"></span> 
       <span class="slider-dots_item" onclick="currentSlide(3)"></span> 
+      <span class="slider-dots_item" onclick="currentSlide(4)"></span>
+      <span class="slider-dots_item" onclick="currentSlide(5)"></span>
   </div> 
     <script src="script/main.js"></script>
   </body>
